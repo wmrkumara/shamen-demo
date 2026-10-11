@@ -92,6 +92,26 @@
   }
   .book-top:hover { background: #D8BC86; }
 
+  /* Mobile menu */
+  .menu-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 8px;
+    background: transparent; color: var(--ink); cursor: pointer; padding: 0;
+  }
+  .menu-btn svg { width: 22px; height: 22px; }
+  .mobile-menu { display: none; border-top: 1px solid var(--line); background: var(--pearl); }
+  header.open .mobile-menu { display: block; }
+  .mobile-menu a.item {
+    display: block; padding: 15px 22px; font-size: 18px; text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+  .mobile-menu a.item:active { background: var(--lilac); }
+  .mobile-menu .menu-book { padding: 16px 22px 20px; }
+  .mobile-menu .menu-book a {
+    display: block; text-align: center; text-decoration: none; background: var(--gold); color: var(--plum);
+    font-weight: 500; font-size: 17px; padding: 14px; border-radius: 4px;
+  }
+
   /* Hero with optional background video */
   .hero { position: relative; overflow: hidden; background: var(--plum); color: var(--pearl); padding: 64px 0 56px; }
   .hero video {
@@ -246,6 +266,7 @@
   @media (min-width: 900px) {
     nav.links { display: flex; }
     .book-top { display: inline-block; }
+    .menu-btn, .mobile-menu, header.open .mobile-menu { display: none; }
     body { padding-bottom: 0; }
     .sticky { display: none; }
     .hero { padding: 120px 0 100px; }
@@ -278,8 +299,20 @@
         <button type="button" data-lang="ta" aria-pressed="false">த</button>
       </div>
       <a class="book-top wa-link" href="#" data-msg="general" data-i18n="book_now">Book now</a>
+      <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Menu">
+        <svg id="menuIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
     </div>
   </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <a class="item" href="#salon" data-i18n="nav_salon">Our salon</a>
+    <a class="item" href="#bridal" data-i18n="nav_bridal">Bridal</a>
+    <a class="item" href="#services" data-i18n="nav_services">Services</a>
+    <a class="item" href="#voice" data-i18n="voice_h">Book by voice</a>
+    <a class="item" href="#team" data-i18n="nav_team">Team</a>
+    <a class="item" href="#visit" data-i18n="nav_visit">Visit us</a>
+    <div class="menu-book"><a class="wa-link" href="#" data-msg="general" data-i18n="book_now">Book now</a></div>
+  </nav>
 </header>
 
 <main id="top">
@@ -639,6 +672,24 @@
   });
 
   document.getElementById("yr").textContent = new Date().getFullYear();
+
+  // ---------- Mobile menu ----------
+  (function () {
+    var header = document.querySelector("header");
+    var btn = document.getElementById("menuBtn");
+    var icon = document.getElementById("menuIcon");
+    var OPEN = '<path d="M6 6l12 12M18 6L6 18"/>';
+    var CLOSED = '<path d="M4 7h16M4 12h16M4 17h16"/>';
+    function setOpen(open) {
+      header.classList.toggle("open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      icon.innerHTML = open ? OPEN : CLOSED;
+    }
+    btn.addEventListener("click", function () { setOpen(!header.classList.contains("open")); });
+    document.querySelectorAll("#mobileMenu a").forEach(function (a) {
+      a.addEventListener("click", function () { setOpen(false); });
+    });
+  })();
 
   // ---------- Voice features ----------
   (function () {
