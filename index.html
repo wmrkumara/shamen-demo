@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shamen Hair & Beyond | Hair, Facial & Bridal Salon in Kurunegala</title>
+<meta name="description" content="Shamen Hair & Beyond is a three-floor salon in Kurunegala with 12 styling chairs, private facial rooms, wax room, bridal dressing room and pedicure area. Book on WhatsApp.">
+<meta name="theme-color" content="#2B1630">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@400;500&family=Noto+Sans+Sinhala:wght@400;600&family=Noto+Sans+Tamil:wght@400;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Shamen Hair & Beyond",
+  "telephone": "+94773282909",
+  "email": "info@shamenhairandbeyond.com",
+  "priceRange": "$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No.33, Rajapihilla Road",
+    "addressLocality": "Kurunegala",
+    "postalCode": "60000",
+    "addressCountry": "LK"
+  },
+  "sameAs": [
+    "https://www.facebook.com/shamenhairandbeyond",
+    "https://www.instagram.com/shamen.hair.and.beyond"
+  ]
+}
+</script>
+<style>
+  :root {
+    --pearl: #F6F3F7;
+    --ink: #24132A;
+    --plum: #2B1630;
+    --mauve: #9A5B86;
+    --lilac: #E7DDEC;
+    --line: #D6C9DB;
+    --gold: #C9A96E;
+    --white: #FFFFFF;
+    --display: "Marcellus", "Optima", "Times New Roman", serif;
+    --body: "Jost", "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  html[lang="si"] { --body: "Noto Sans Sinhala", "Iskoola Pota", sans-serif; }
+  html[lang="ta"] { --body: "Noto Sans Tamil", "Latha", sans-serif; }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-behavior: smooth; scroll-padding-top: calc(64px + env(safe-area-inset-top, 0px)); }
+  body {
+    margin: 0;
+    background: var(--pearl);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    padding-bottom: 76px;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--mauve); outline-offset: 3px; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 22px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* Header */
+  header {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 10;
+    background: rgba(246, 243, 247, 0.96);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 12px; }
+  .brand { display: block; line-height: 0; flex: none; }
+  .brand img { height: 44px; width: auto; }
+  nav.links { display: none; gap: 24px; }
+  nav.links a { text-decoration: none; font-size: 15px; }
+  nav.links a:hover { color: var(--mauve); }
+  .right { display: flex; align-items: center; gap: 10px; }
+  .lang { display: flex; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+  .lang button {
+    border: 0; background: transparent; color: var(--ink);
+    font: 500 14px/1 var(--body); padding: 8px 10px; cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] { background: var(--plum); color: var(--white); }
+  .book-top {
+    display: none; text-decoration: none; background: var(--gold); color: var(--plum);
+    font-weight: 500; font-size: 15px; padding: 10px 18px; border-radius: 4px;
+  }
+  .book-top:hover { background: #D8BC86; }
+
+  /* Hero with optional background video */
+  .hero { position: relative; overflow: hidden; background: var(--plum); color: var(--pearl); padding: 64px 0 56px; }
+  .hero video {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; z-index: 0;
+  }
+  .hero::after {
+    content: ""; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(90deg, rgba(43,22,48,0.92) 0%, rgba(43,22,48,0.7) 55%, rgba(43,22,48,0.35) 100%);
+  }
+  .hero .wrap { position: relative; z-index: 2; }
+  .hero h1 { margin: 0; line-height: 0; }
+  .hero-logo { width: min(420px, 80%); height: auto; filter: brightness(0) invert(1); margin: 0 0 28px; }
+  .hero p { max-width: 34ch; font-size: 19px; margin: 0 0 30px; color: var(--lilac); }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    text-decoration: none; font-weight: 500; font-size: 16px;
+    padding: 14px 22px; border-radius: 40px;
+  }
+  .btn-wa { background: #25D366; color: #0B2E17; }
+  .btn-line { border: 1px solid var(--lilac); color: var(--pearl); }
+  .btn-dark { background: var(--plum); color: var(--pearl); }
+  .btn-gold { background: var(--gold); color: var(--plum); }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+  .hero .addr { margin-top: 34px; font-size: 15px; color: var(--lilac); opacity: 0.85; }
+
+  /* Sections */
+  section.block { padding: 72px 0; }
+  h2 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(34px, 7vw, 52px);
+    line-height: 1.1;
+    margin: 0 0 14px;
+  }
+  .lead { max-width: 52ch; margin: 0 0 36px; color: #4B3A50; }
+
+  /* Directory board */
+  .directory { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .directory li {
+    display: flex; align-items: baseline; gap: 12px;
+    padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 18px;
+  }
+  .directory .name { flex: none; max-width: 75%; }
+  .directory .dots { flex: 1; border-bottom: 1px dotted var(--mauve); transform: translateY(-5px); min-width: 20px; }
+  .directory .num { font-family: var(--display); font-size: 30px; line-height: 1; color: var(--plum); min-width: 1.4em; text-align: right; }
+
+  /* Bridal */
+  .bridal { background: var(--plum); color: var(--pearl); }
+  .bridal .lead { color: var(--lilac); }
+  .bridal-grid { display: grid; gap: 30px; }
+  .bridal-photo {
+    aspect-ratio: 4 / 5; border-radius: 4px;
+    background: linear-gradient(160deg, #5B2A55, var(--mauve));
+    display: flex; align-items: flex-end; padding: 14px; font-size: 13px; color: var(--lilac);
+  }
+  .bridal ul { list-style: none; margin: 0 0 32px; padding: 0; }
+  .bridal li { padding: 14px 0; border-bottom: 1px solid rgba(231, 221, 236, 0.25); font-size: 18px; }
+
+  /* Voice */
+  .listen-btn {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 22px;
+    background: transparent; border: 0; color: var(--lilac); font: 500 15px/1.2 var(--body);
+    cursor: pointer; padding: 6px 0;
+  }
+  .listen-btn .ico {
+    width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--lilac);
+    display: inline-flex; align-items: center; justify-content: center; font-size: 13px;
+  }
+  .listen-btn[disabled] { opacity: 0.6; cursor: default; }
+  .voice { background: var(--lilac); }
+  .voice-box { max-width: 620px; }
+  .mic {
+    display: inline-flex; align-items: center; gap: 12px; border: 0; cursor: pointer;
+    background: var(--plum); color: var(--pearl); font: 500 17px/1 var(--body);
+    padding: 12px 22px 12px 12px; border-radius: 40px; margin-bottom: 16px;
+  }
+  .mic .dot {
+    width: 44px; height: 44px; border-radius: 50%; background: var(--gold); color: var(--plum);
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .mic .dot svg { width: 22px; height: 22px; }
+  .mic.on .dot { background: #E0565B; color: var(--white); animation: pulse 1.2s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(224,86,91,0.5); } 50% { box-shadow: 0 0 0 10px rgba(224,86,91,0); } }
+  .voice textarea {
+    width: 100%; min-height: 96px; border: 1px solid var(--line); border-radius: 6px;
+    padding: 12px 14px; font: 17px/1.5 var(--body); color: var(--ink); background: var(--white); resize: vertical;
+  }
+  .voice-status { min-height: 1.5em; font-size: 15px; color: #6A5870; margin: 8px 0 16px; }
+  .voice-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .note-link { color: var(--plum); font-weight: 500; }
+  .note-hint { font-size: 15px; color: #6A5870; margin: 10px 0 0; }
+  @media (prefers-reduced-motion: reduce) { .mic.on .dot { animation: none; } }
+
+  /* Services */
+  .services { background: var(--white); }
+  .cats { display: grid; gap: 34px; }
+  .cat h3 { font-family: var(--display); font-weight: 400; font-size: 26px; margin: 0 0 8px; color: var(--plum); }
+  .cat ul { list-style: none; margin: 0; padding: 0; }
+  .cat li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .cat li a { font-size: 14px; color: var(--mauve); font-weight: 500; text-decoration: none; white-space: nowrap; }
+  .cat li a:hover { text-decoration: underline; }
+
+  /* Team */
+  .team-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .member .face {
+    aspect-ratio: 1; border-radius: 50%;
+    background: linear-gradient(160deg, var(--lilac), #CDB8D6);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--display); font-size: 34px; color: var(--plum); margin-bottom: 12px;
+  }
+  .member strong { display: block; font-weight: 500; }
+  .member span { font-size: 15px; color: #6A5870; }
+
+  /* Gallery */
+  .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .ph {
+    aspect-ratio: 4 / 5; border-radius: 4px;
+    background: linear-gradient(160deg, var(--lilac), #CDB8D6);
+    display: flex; align-items: flex-end; padding: 12px;
+    font-size: 13px; color: var(--plum);
+  }
+  .ph:nth-child(3n+2) { background: linear-gradient(160deg, #D9C6DF, var(--mauve)); color: var(--white); }
+
+  /* Reviews and jobs */
+  .reviews { background: var(--lilac); }
+  .review-box { border-left: 3px solid var(--plum); padding: 6px 0 6px 20px; max-width: 52ch; margin-bottom: 26px; }
+  .jobs { background: var(--white); border-top: 1px solid var(--line); }
+
+  /* Visit */
+  .visit-grid { display: grid; gap: 30px; }
+  .facts { margin: 0; }
+  .facts dt { font-size: 14px; color: var(--mauve); margin-top: 18px; }
+  .facts dd { margin: 2px 0 0; font-size: 18px; }
+  .facts a { text-decoration: none; }
+  .map { width: 100%; aspect-ratio: 4 / 3; border: 0; border-radius: 4px; background: var(--lilac); }
+
+  footer { background: var(--plum); color: var(--lilac); padding: 40px 0; font-size: 15px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
+  footer a { text-decoration: none; margin-right: 18px; }
+  footer a:hover { color: var(--white); }
+
+  /* Sticky mobile booking bar */
+  .sticky {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+    background: var(--plum); display: flex; gap: 10px;
+  }
+  .sticky a { flex: 1; justify-content: center; padding: 12px; font-size: 15px; }
+
+  @media (min-width: 900px) {
+    nav.links { display: flex; }
+    .book-top { display: inline-block; }
+    body { padding-bottom: 0; }
+    .sticky { display: none; }
+    .hero { padding: 120px 0 100px; }
+    .cats { grid-template-columns: repeat(2, 1fr); column-gap: 56px; }
+    .gallery { grid-template-columns: repeat(3, 1fr); }
+    .team-grid { grid-template-columns: repeat(4, 1fr); gap: 28px; }
+    .visit-grid { grid-template-columns: 1fr 1.3fr; align-items: start; }
+    .salon-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; }
+    .bridal-grid { grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: center; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top"><img src="logo.png" alt="Shamen Hair &amp; Beyond" width="504" height="264"></a>
+    <nav class="links" aria-label="Main">
+      <a href="#salon" data-i18n="nav_salon">Our salon</a>
+      <a href="#bridal" data-i18n="nav_bridal">Bridal</a>
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#team" data-i18n="nav_team">Team</a>
+      <a href="#visit" data-i18n="nav_visit">Visit us</a>
+    </nav>
+    <div class="right">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="si" aria-pressed="false">සිං</button>
+        <button type="button" data-lang="ta" aria-pressed="false">த</button>
+      </div>
+      <a class="book-top wa-link" href="#" data-msg="general" data-i18n="book_now">Book now</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <!-- Background video: upload hero.mp4 (8-15 sec, muted, 720p, 2-4 MB) and hero.jpg (first frame) next to this file -->
+    <video id="heroVideo" muted loop playsinline preload="none" poster="hero.jpg" aria-hidden="true"></video>
+    <div class="wrap">
+      <h1><span class="sr-only">Shamen Hair &amp; Beyond, salon in Kurunegala</span><img class="hero-logo" src="logo.png" alt="" width="504" height="264"></h1>
+      <p data-i18n="hero_line">A three-floor salon for hair, skin and bridal beauty in Kurunegala.</p>
+      <div class="actions">
+        <a class="btn btn-wa wa-link" href="#" data-msg="general">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.3c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.6 0l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+          <span data-i18n="book">Book on WhatsApp</span>
+        </a>
+        <a class="btn btn-line" href="tel:+94773282909" data-i18n="call">Call us</a>
+      </div>
+      <button type="button" class="listen-btn" id="listenBtn"><span class="ico" aria-hidden="true">&#9654;</span><span id="listenLabel">Listen to our welcome</span></button>
+      <audio id="welcomeAudio" preload="none" src="welcome.mp3"></audio>
+      <p class="addr">No.33, Rajapihilla Road, Kurunegala</p>
+    </div>
+  </section>
+
+  <section class="block" id="salon">
+    <div class="wrap salon-grid">
+      <div>
+        <h2 data-i18n="salon_h">Three floors, one visit</h2>
+        <p class="lead" data-i18n="salon_p">Every treatment has its own room, so you can relax without being rushed.</p>
+      </div>
+      <ul class="directory">
+        <li><span class="name" data-i18n="f_floors">Floors of modern salon space</span><span class="dots"></span><span class="num">3</span></li>
+        <li><span class="name" data-i18n="f_chairs">Professional styling chairs</span><span class="dots"></span><span class="num">12</span></li>
+        <li><span class="name" data-i18n="f_facial">Private facial rooms</span><span class="dots"></span><span class="num">3</span></li>
+        <li><span class="name" data-i18n="f_dressing">Private bridal dressing room</span><span class="dots"></span><span class="num">1</span></li>
+        <li><span class="name" data-i18n="f_wax">Private wax room</span><span class="dots"></span><span class="num">1</span></li>
+        <li><span class="name" data-i18n="f_consult">Personal consultation room</span><span class="dots"></span><span class="num">1</span></li>
+        <li><span class="name" data-i18n="f_pedicure">Dedicated pedicure area</span><span class="dots"></span><span class="num">1</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block bridal" id="bridal">
+    <div class="wrap bridal-grid">
+      <div class="bridal-photo">Bridal photo</div>
+      <div>
+        <h2 data-i18n="bridal_h">Bridal at Shamen</h2>
+        <p class="lead" data-i18n="bridal_p">Hair, makeup and dressing for your wedding day, prepared in our private bridal dressing room.</p>
+        <ul>
+          <li data-i18n="b1">Bridal hair and makeup</li>
+          <li data-i18n="b2">Bridal dressing in a private room</li>
+          <li data-i18n="b3">One-to-one consultation before your wedding</li>
+        </ul>
+        <a class="btn btn-gold wa-link" href="#" data-msg="Bridal consultation" data-i18n="bridal_btn">Book a bridal consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block services" id="services">
+    <div class="wrap">
+      <h2 data-i18n="services_h">Services</h2>
+      <p class="lead" data-i18n="services_p">Full price list coming soon. Message us on WhatsApp for prices and available times.</p>
+      <div class="cats">
+        <div class="cat">
+          <h3 data-i18n="c_hair">Hair</h3>
+          <ul>
+            <li><span>Haircut &amp; styling</span><a href="#" class="wa-link" data-msg="Haircut & styling" data-i18n="ask">Ask on WhatsApp</a></li>
+            <li><span>Hair colour</span><a href="#" class="wa-link" data-msg="Hair colour" data-i18n="ask">Ask on WhatsApp</a></li>
+            <li><span>Hair treatments</span><a href="#" class="wa-link" data-msg="Hair treatments" data-i18n="ask">Ask on WhatsApp</a></li>
+          </ul>
+        </div>
+        <div class="cat">
+          <h3 data-i18n="c_facial">Facial &amp; skin</h3>
+          <ul>
+            <li><span>Facial treatments</span><a href="#" class="wa-link" data-msg="Facial treatments" data-i18n="ask">Ask on WhatsApp</a></li>
+            <li><span>Skin consultation</span><a href="#" class="wa-link" data-msg="Skin consultation" data-i18n="ask">Ask on WhatsApp</a></li>
+          </ul>
+        </div>
+        <div class="cat">
+          <h3 data-i18n="c_wax">Waxing</h3>
+          <ul>
+            <li><span>Full &amp; part waxing</span><a href="#" class="wa-link" data-msg="Waxing" data-i18n="ask">Ask on WhatsApp</a></li>
+          </ul>
+        </div>
+        <div class="cat">
+          <h3 data-i18n="c_pedicure">Pedicure</h3>
+          <ul>
+            <li><span>Pedicure &amp; foot care</span><a href="#" class="wa-link" data-msg="Pedicure" data-i18n="ask">Ask on WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block voice" id="voice">
+    <div class="wrap voice-box">
+      <h2 data-i18n="voice_h">Book by voice</h2>
+      <p class="lead" data-i18n="voice_p">Tap the microphone and say what you'd like, for example "Facial on Saturday morning". Check the words, then send them to us on WhatsApp.</p>
+      <button type="button" class="mic" id="micBtn">
+        <span class="dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-3.1A7 7 0 0 0 19 11h-2z"/></svg></span>
+        <span id="micLabel">Tap to speak</span>
+      </button>
+      <label class="sr-only" for="voiceText">Your booking message</label>
+      <textarea id="voiceText" data-i18n-ph="voice_placeholder" placeholder="Your message appears here. You can also type."></textarea>
+      <p class="voice-status" id="voiceStatus" aria-live="polite"></p>
+      <div class="voice-actions">
+        <a class="btn btn-wa" id="voiceSend" href="#" target="_blank" rel="noopener" data-i18n="voice_send">Send on WhatsApp</a>
+        <a class="note-link" href="https://wa.me/94773282909" target="_blank" rel="noopener" data-i18n="voice_note">Send a voice note instead</a>
+      </div>
+      <p class="note-hint" data-i18n="voice_note_hint">WhatsApp opens our chat. Hold the microphone button to record.</p>
+    </div>
+  </section>
+
+  <section class="block" id="team">
+    <div class="wrap">
+      <h2 data-i18n="team_h">Meet our team</h2>
+      <p class="lead" data-i18n="team_p">Team photos and names coming soon.</p>
+      <div class="team-grid">
+        <div class="member"><div class="face">S</div><strong>Name</strong><span>Senior stylist</span></div>
+        <div class="member"><div class="face">B</div><strong>Name</strong><span>Bridal artist</span></div>
+        <div class="member"><div class="face">T</div><strong>Name</strong><span>Beauty therapist</span></div>
+        <div class="member"><div class="face">P</div><strong>Name</strong><span>Pedicure specialist</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block services" id="gallery">
+    <div class="wrap">
+      <h2 data-i18n="gallery_h">Our work</h2>
+      <p class="lead" data-i18n="gallery_p">Before-and-after photos from our stylists.</p>
+      <div class="gallery">
+        <div class="ph">Photo 1</div><div class="ph">Photo 2</div><div class="ph">Photo 3</div>
+        <div class="ph">Photo 4</div><div class="ph">Photo 5</div><div class="ph">Photo 6</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block reviews" id="reviews">
+    <div class="wrap">
+      <h2 data-i18n="reviews_h">What clients say</h2>
+      <div class="review-box"><p data-i18n="reviews_p">Google reviews from our clients will appear here.</p></div>
+      <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Shamen+Hair+%26+Beyond+Kurunegala" target="_blank" rel="noopener" data-i18n="review_btn">Read our reviews on Google</a>
+    </div>
+  </section>
+
+  <section class="block" id="visit">
+    <div class="wrap visit-grid">
+      <div>
+        <h2 data-i18n="visit_h">Visit us</h2>
+        <dl class="facts">
+          <dt data-i18n="l_address">Address</dt>
+          <dd>No.33, Rajapihilla Road,<br>Kurunegala 60000</dd>
+          <dt data-i18n="l_hours">Opening hours</dt>
+          <dd data-i18n="hours_tbc">To be confirmed</dd>
+          <dt data-i18n="l_phone">Phone &amp; WhatsApp</dt>
+          <dd><a href="tel:+94773282909">+94 77 328 2909</a></dd>
+          <dt>Email</dt>
+          <dd><a href="mailto:info@shamenhairandbeyond.com">info@shamenhairandbeyond.com</a></dd>
+        </dl>
+        <p style="margin-top:26px"><a class="btn btn-dark" href="https://www.google.com/maps/dir/?api=1&destination=No.33+Rajapihilla+Road+Kurunegala" target="_blank" rel="noopener" data-i18n="directions">Get directions</a></p>
+      </div>
+      <iframe class="map" title="Map to Shamen Hair & Beyond" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=No.33+Rajapihilla+Road+Kurunegala&output=embed"></iframe>
+    </div>
+  </section>
+
+  <section class="block jobs" id="jobs">
+    <div class="wrap">
+      <h2 data-i18n="jobs_h">Join our team</h2>
+      <p class="lead" data-i18n="jobs_p">We're often looking for stylists, beauticians and bridal dressers. Send us your details on WhatsApp.</p>
+      <a class="btn btn-dark wa-link" href="#" data-msg="job" data-i18n="jobs_btn">Apply on WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a href="https://www.facebook.com/shamenhairandbeyond" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/shamen.hair.and.beyond" target="_blank" rel="noopener">Instagram</a>
+      <a href="#jobs" data-i18n="jobs_h">Join our team</a>
+    </div>
+    <div>© <span id="yr"></span> Shamen Hair &amp; Beyond, Kurunegala</div>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="btn btn-wa wa-link" href="#" data-msg="general" data-i18n="book_short">Book on WhatsApp</a>
+  <a class="btn btn-line" href="tel:+94773282909" data-i18n="call">Call us</a>
+</div>
+
+<script>
+  var WA_NUMBER = "94773282909";
+
+  var T = {
+    en: {
+      voice_h: "Book by voice",
+      voice_p: "Tap the microphone and say what you'd like, for example \"Facial on Saturday morning\". Check the words, then send them to us on WhatsApp.",
+      mic_start: "Tap to speak", mic_stop: "Listening… tap to stop",
+      voice_placeholder: "Your message appears here. You can also type.",
+      voice_send: "Send on WhatsApp", voice_note: "Send a voice note instead",
+      voice_note_hint: "WhatsApp opens our chat. Hold the microphone button to record.",
+      mic_unsupported: "Voice typing isn't available in this browser. Type your message, or send a voice note.",
+      mic_error: "Couldn't hear you. Allow microphone access and try again.",
+      voice_empty: "Say or type your message first.",
+      listen: "Listen to our welcome", listen_stop: "Stop", listen_soon: "Welcome message coming soon",
+      wa_voice: "Hello Shamen Hair & Beyond: ",
+      nav_salon: "Our salon", nav_bridal: "Bridal", nav_services: "Services", nav_team: "Team", nav_visit: "Visit us",
+      book_now: "Book now",
+      hero_line: "A three-floor salon for hair, skin and bridal beauty in Kurunegala.",
+      book: "Book on WhatsApp", book_short: "Book on WhatsApp", call: "Call us",
+      salon_h: "Three floors, one visit",
+      salon_p: "Every treatment has its own room, so you can relax without being rushed.",
+      f_floors: "Floors of modern salon space", f_chairs: "Professional styling chairs",
+      f_facial: "Private facial rooms", f_dressing: "Private bridal dressing room",
+      f_wax: "Private wax room", f_consult: "Personal consultation room", f_pedicure: "Dedicated pedicure area",
+      bridal_h: "Bridal at Shamen",
+      bridal_p: "Hair, makeup and dressing for your wedding day, prepared in our private bridal dressing room.",
+      b1: "Bridal hair and makeup", b2: "Bridal dressing in a private room", b3: "One-to-one consultation before your wedding",
+      bridal_btn: "Book a bridal consultation",
+      services_h: "Services",
+      services_p: "Full price list coming soon. Message us on WhatsApp for prices and available times.",
+      c_hair: "Hair", c_facial: "Facial & skin", c_wax: "Waxing", c_pedicure: "Pedicure",
+      ask: "Ask on WhatsApp",
+      team_h: "Meet our team", team_p: "Team photos and names coming soon.",
+      gallery_h: "Our work", gallery_p: "Before-and-after photos from our stylists.",
+      reviews_h: "What clients say", reviews_p: "Google reviews from our clients will appear here.",
+      review_btn: "Read our reviews on Google",
+      visit_h: "Visit us", l_address: "Address", l_hours: "Opening hours", hours_tbc: "To be confirmed",
+      l_phone: "Phone & WhatsApp", directions: "Get directions",
+      jobs_h: "Join our team",
+      jobs_p: "We're often looking for stylists, beauticians and bridal dressers. Send us your details on WhatsApp.",
+      jobs_btn: "Apply on WhatsApp",
+      wa_general: "Hello Shamen Hair & Beyond, I would like to book an appointment.",
+      wa_service: "Hello Shamen Hair & Beyond, I would like to know the price and available times for: ",
+      wa_job: "Hello Shamen Hair & Beyond, I would like to apply for a job."
+    },
+    si: {
+      voice_h: "හඬෙන් Book කරන්න",
+      voice_p: "Microphone එක තට්ටු කර ඔබට අවශ්‍ය දේ කියන්න, උදා: \"සෙනසුරාදා උදේ facial එකක්\". වචන පරීක්ෂා කර WhatsApp මගින් අපට එවන්න.",
+      mic_start: "කතා කිරීමට තට්ටු කරන්න", mic_stop: "අහගෙන ඉන්නවා… නවත්වන්න තට්ටු කරන්න",
+      voice_placeholder: "ඔබගේ පණිවිඩය මෙහි පෙන්වයි. ටයිප් කිරීමටද හැක.",
+      voice_send: "WhatsApp මගින් යවන්න", voice_note: "ඒ වෙනුවට voice note එකක් එවන්න",
+      voice_note_hint: "WhatsApp chat එක විවෘත වේ. Record කිරීමට microphone බොත්තම අල්ලාගෙන සිටින්න.",
+      mic_unsupported: "මෙම browser එකේ voice typing නැත. පණිවිඩය ටයිප් කරන්න, නැත්නම් voice note එකක් එවන්න.",
+      mic_error: "ඇසුණේ නැත. Microphone අවසර දී නැවත උත්සාහ කරන්න.",
+      voice_empty: "පළමුව ඔබගේ පණිවිඩය කියන්න හෝ ටයිප් කරන්න.",
+      listen: "අපගේ පිළිගැනීම අසන්න", listen_stop: "නවත්වන්න", listen_soon: "පිළිගැනීමේ පණිවිඩය ඉක්මනින්",
+      wa_voice: "ආයුබෝවන් Shamen Hair & Beyond: ",
+      nav_salon: "අපේ salon එක", nav_bridal: "මනාලියන්", nav_services: "සේවා", nav_team: "අපේ කණ්ඩායම", nav_visit: "අප වෙත පැමිණෙන්න",
+      book_now: "Book කරන්න",
+      hero_line: "කුරුණෑගල හිසකෙස්, සම සහ මනාලියන්ගේ අලංකාරය සඳහා මහල් තුනක salon එකක්.",
+      book: "WhatsApp හරහා Book කරන්න", book_short: "WhatsApp Book", call: "අමතන්න",
+      salon_h: "මහල් තුනක්, එකම ගමනක්",
+      salon_p: "සෑම ප්‍රතිකාරයකටම වෙනම කාමරයක් ඇති නිසා ඔබට කලබලයකින් තොරව සැනසිල්ලේ සිටිය හැක.",
+      f_floors: "නවීන salon මහල්", f_chairs: "වෘත්තීය styling chairs",
+      f_facial: "පෞද්ගලික facial rooms", f_dressing: "පෞද්ගලික bridal dressing room",
+      f_wax: "පෞද්ගලික wax room", f_consult: "පුද්ගලික consultation room", f_pedicure: "විශේෂ pedicure area",
+      bridal_h: "Shamen හි මනාලියන් සඳහා",
+      bridal_p: "ඔබගේ මංගල දිනය සඳහා හිසකෙස්, makeup සහ ඇඳුම් ඇඳීම, අපගේ පෞද්ගලික bridal dressing room එකේදී.",
+      b1: "Bridal හිසකෙස් සහ makeup", b2: "පෞද්ගලික කාමරයක bridal dressing", b3: "මංගල්‍යයට පෙර පුද්ගලික consultation එකක්",
+      bridal_btn: "Bridal consultation එකක් book කරන්න",
+      services_h: "අපගේ සේවා",
+      services_p: "සම්පූර්ණ මිල ලැයිස්තුව ඉක්මනින්. මිල ගණන් සහ වේලාවන් සඳහා WhatsApp කරන්න.",
+      c_hair: "හිසකෙස්", c_facial: "Facial සහ සම", c_wax: "Waxing", c_pedicure: "Pedicure",
+      ask: "WhatsApp හරහා විමසන්න",
+      team_h: "අපේ කණ්ඩායම", team_p: "කණ්ඩායමේ ඡායාරූප සහ නම් ඉක්මනින්.",
+      gallery_h: "අපගේ නිර්මාණ", gallery_p: "අපගේ stylists ලාගේ before/after ඡායාරූප.",
+      reviews_h: "පාරිභෝගික අදහස්", reviews_p: "අපගේ පාරිභෝගිකයන්ගේ Google reviews මෙහි පෙන්වනු ඇත.",
+      review_btn: "Google reviews බලන්න",
+      visit_h: "අප වෙත පැමිණෙන්න", l_address: "ලිපිනය", l_hours: "විවෘත වේලාවන්", hours_tbc: "ඉක්මනින් දැනුම් දෙනු ලැබේ",
+      l_phone: "දුරකථන සහ WhatsApp", directions: "මාර්ගය බලන්න",
+      jobs_h: "අප සමඟ එක්වන්න",
+      jobs_p: "අපි නිතරම stylists, beauticians සහ bridal dressers සොයනවා. ඔබගේ විස්තර WhatsApp මගින් එවන්න.",
+      jobs_btn: "WhatsApp හරහා අයදුම් කරන්න",
+      wa_general: "ආයුබෝවන් Shamen Hair & Beyond, මට appointment එකක් book කර ගැනීමට අවශ්‍යයි.",
+      wa_service: "ආයුබෝවන් Shamen Hair & Beyond, මෙම සේවාවේ මිල සහ වේලාවන් දැන ගැනීමට කැමතියි: ",
+      wa_job: "ආයුබෝවන් Shamen Hair & Beyond, මට රැකියාවක් සඳහා අයදුම් කිරීමට අවශ්‍යයි."
+    },
+    ta: {
+      voice_h: "குரல் மூலம் முன்பதிவு",
+      voice_p: "மைக்கைத் தட்டி உங்களுக்கு என்ன வேண்டும் என்று சொல்லுங்கள், எ.கா. \"சனிக்கிழமை காலை ஃபேஷியல்\". வார்த்தைகளைச் சரிபார்த்து WhatsApp மூலம் அனுப்புங்கள்.",
+      mic_start: "பேச தட்டவும்", mic_stop: "கேட்கிறது… நிறுத்த தட்டவும்",
+      voice_placeholder: "உங்கள் செய்தி இங்கே தோன்றும். தட்டச்சும் செய்யலாம்.",
+      voice_send: "WhatsApp மூலம் அனுப்பு", voice_note: "பதிலாக குரல் செய்தி அனுப்புங்கள்",
+      voice_note_hint: "WhatsApp அரட்டை திறக்கும். பதிவு செய்ய மைக் பொத்தானை அழுத்திப் பிடிக்கவும்.",
+      mic_unsupported: "இந்த உலாவியில் குரல் தட்டச்சு இல்லை. செய்தியைத் தட்டச்சு செய்யுங்கள் அல்லது குரல் செய்தி அனுப்புங்கள்.",
+      mic_error: "கேட்கவில்லை. மைக் அனுமதி வழங்கி மீண்டும் முயற்சிக்கவும்.",
+      voice_empty: "முதலில் உங்கள் செய்தியைச் சொல்லுங்கள் அல்லது தட்டச்சு செய்யுங்கள்.",
+      listen: "எங்கள் வரவேற்பைக் கேளுங்கள்", listen_stop: "நிறுத்து", listen_soon: "வரவேற்பு செய்தி விரைவில்",
+      wa_voice: "வணக்கம் Shamen Hair & Beyond: ",
+      nav_salon: "எங்கள் சலூன்", nav_bridal: "மணமகள்", nav_services: "சேவைகள்", nav_team: "எங்கள் குழு", nav_visit: "எங்களை சந்திக்க",
+      book_now: "முன்பதிவு",
+      hero_line: "குருநாகலில் கூந்தல், சருமம் மற்றும் மணமகள் அழகுக்கான மூன்று தள சலூன்.",
+      book: "WhatsApp மூலம் முன்பதிவு", book_short: "WhatsApp முன்பதிவு", call: "அழைக்கவும்",
+      salon_h: "மூன்று தளங்கள், ஒரே வருகை",
+      salon_p: "ஒவ்வொரு சிகிச்சைக்கும் தனி அறை இருப்பதால், அவசரமின்றி நிம்மதியாக இருக்கலாம்.",
+      f_floors: "நவீன சலூன் தளங்கள்", f_chairs: "தொழில்முறை ஸ்டைலிங் நாற்காலிகள்",
+      f_facial: "தனிப்பட்ட ஃபேஷியல் அறைகள்", f_dressing: "தனிப்பட்ட மணமகள் அலங்கார அறை",
+      f_wax: "தனிப்பட்ட வாக்சிங் அறை", f_consult: "தனிப்பட்ட ஆலோசனை அறை", f_pedicure: "பிரத்யேக பெடிக்யூர் பகுதி",
+      bridal_h: "Shamen-இல் மணமகள் அலங்காரம்",
+      bridal_p: "உங்கள் திருமண நாளுக்கான கூந்தல், மேக்கப் மற்றும் அலங்காரம், எங்கள் தனிப்பட்ட மணமகள் அலங்கார அறையில்.",
+      b1: "மணமகள் கூந்தல் மற்றும் மேக்கப்", b2: "தனி அறையில் மணமகள் அலங்காரம்", b3: "திருமணத்திற்கு முன் தனிப்பட்ட ஆலோசனை",
+      bridal_btn: "மணமகள் ஆலோசனைக்கு முன்பதிவு",
+      services_h: "எங்கள் சேவைகள்",
+      services_p: "முழு விலைப் பட்டியல் விரைவில். விலைகள் மற்றும் நேரங்களுக்கு WhatsApp செய்யுங்கள்.",
+      c_hair: "கூந்தல்", c_facial: "ஃபேஷியல் & சருமம்", c_wax: "வாக்சிங்", c_pedicure: "பெடிக்யூர்",
+      ask: "WhatsApp இல் கேளுங்கள்",
+      team_h: "எங்கள் குழுவை சந்தியுங்கள்", team_p: "குழு புகைப்படங்களும் பெயர்களும் விரைவில்.",
+      gallery_h: "எங்கள் வேலைகள்", gallery_p: "எங்கள் ஸ்டைலிஸ்ட்களின் முன்-பின் புகைப்படங்கள்.",
+      reviews_h: "வாடிக்கையாளர் கருத்துகள்", reviews_p: "எங்கள் வாடிக்கையாளர்களின் Google மதிப்புரைகள் இங்கே தோன்றும்.",
+      review_btn: "Google மதிப்புரைகளைப் பாருங்கள்",
+      visit_h: "எங்களை சந்திக்க", l_address: "முகவரி", l_hours: "திறக்கும் நேரம்", hours_tbc: "விரைவில் அறிவிக்கப்படும்",
+      l_phone: "தொலைபேசி & WhatsApp", directions: "வழிகாட்டல்",
+      jobs_h: "எங்கள் குழுவில் சேருங்கள்",
+      jobs_p: "நாங்கள் அடிக்கடி ஸ்டைலிஸ்ட்கள், அழகுக்கலை நிபுணர்கள் மற்றும் மணமகள் அலங்கார நிபுணர்களைத் தேடுகிறோம். உங்கள் விவரங்களை WhatsApp மூலம் அனுப்புங்கள்.",
+      jobs_btn: "WhatsApp மூலம் விண்ணப்பிக்கவும்",
+      wa_general: "வணக்கம் Shamen Hair & Beyond, நான் ஒரு முன்பதிவு செய்ய விரும்புகிறேன்.",
+      wa_service: "வணக்கம் Shamen Hair & Beyond, இந்த சேவையின் விலை மற்றும் நேரங்களை அறிய விரும்புகிறேன்: ",
+      wa_job: "வணக்கம் Shamen Hair & Beyond, நான் வேலைக்கு விண்ணப்பிக்க விரும்புகிறேன்."
+    }
+  };
+
+  var current = "en";
+
+  function updateWhatsAppLinks() {
+    var t = T[current];
+    document.querySelectorAll(".wa-link").forEach(function (a) {
+      var m = a.getAttribute("data-msg");
+      var text = (m === "general") ? t.wa_general : (m === "job") ? t.wa_job : t.wa_service + m;
+      a.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(text);
+      a.target = "_blank";
+      a.rel = "noopener";
+    });
+  }
+
+  function setLang(lang) {
+    if (!T[lang]) lang = "en";
+    current = lang;
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n");
+      if (T[lang][key]) el.textContent = T[lang][key];
+    });
+    document.querySelectorAll("[data-i18n-ph]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-ph");
+      if (T[lang][key]) el.placeholder = T[lang][key];
+    });
+    if (window.refreshVoiceUI) window.refreshVoiceUI();
+    document.querySelectorAll(".lang button").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false");
+    });
+    updateWhatsAppLinks();
+    try { localStorage.setItem("shamen_lang", lang); } catch (e) {}
+  }
+
+  document.querySelectorAll(".lang button").forEach(function (b) {
+    b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
+  });
+
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  // ---------- Voice features ----------
+  (function () {
+    var micBtn = document.getElementById("micBtn");
+    var micLabel = document.getElementById("micLabel");
+    var box = document.getElementById("voiceText");
+    var status = document.getElementById("voiceStatus");
+    var send = document.getElementById("voiceSend");
+    var listenBtn = document.getElementById("listenBtn");
+    var listenLabel = document.getElementById("listenLabel");
+    var audio = document.getElementById("welcomeAudio");
+    var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    var rec = null, listening = false, audioMissing = false;
+    var speechLang = { en: "en-US", si: "si-LK", ta: "ta-LK" };
+
+    function t(k) { return T[current][k]; }
+
+    window.refreshVoiceUI = function () {
+      micLabel.textContent = listening ? t("mic_stop") : t("mic_start");
+      if (!SR) status.textContent = t("mic_unsupported");
+      listenLabel.textContent = audioMissing ? t("listen_soon") : (audio.paused ? t("listen") : t("listen_stop"));
+    };
+
+    // Speak to book
+    if (!SR) {
+      micBtn.style.display = "none";
+    } else {
+      micBtn.addEventListener("click", function () {
+        if (listening) { rec.stop(); return; }
+        rec = new SR();
+        rec.lang = speechLang[current] || "en-US";
+        rec.interimResults = true;
+        rec.continuous = false;
+        var base = box.value ? box.value.trim() + " " : "";
+        rec.onresult = function (e) {
+          var text = "";
+          for (var i = 0; i < e.results.length; i++) text += e.results[i][0].transcript;
+          box.value = base + text;
+        };
+        rec.onerror = function () { status.textContent = t("mic_error"); };
+        rec.onend = function () { listening = false; micBtn.classList.remove("on"); window.refreshVoiceUI(); };
+        try {
+          rec.start();
+          listening = true; micBtn.classList.add("on"); status.textContent = "";
+          window.refreshVoiceUI();
+        } catch (err) { status.textContent = t("mic_error"); }
+      });
+    }
+
+    // Send the spoken or typed message on WhatsApp
+    send.addEventListener("click", function (e) {
+      var msg = box.value.trim();
+      if (!msg) { e.preventDefault(); status.textContent = t("voice_empty"); box.focus(); return; }
+      send.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(t("wa_voice") + msg);
+    });
+
+    // Owner's welcome voice message (upload welcome.mp3 next to index.html)
+    audio.addEventListener("error", function () { audioMissing = true; listenBtn.disabled = true; window.refreshVoiceUI(); });
+    audio.addEventListener("ended", window.refreshVoiceUI);
+    audio.addEventListener("pause", window.refreshVoiceUI);
+    audio.addEventListener("play", window.refreshVoiceUI);
+    listenBtn.addEventListener("click", function () {
+      if (audioMissing) return;
+      if (audio.paused) {
+        var p = audio.play();
+        if (p && p.catch) p.catch(function () { audioMissing = true; listenBtn.disabled = true; window.refreshVoiceUI(); });
+      } else { audio.pause(); audio.currentTime = 0; }
+    });
+  })();
+
+  var saved = "en";
+  try { saved = localStorage.getItem("shamen_lang") || "en"; } catch (e) {}
+  setLang(saved);
+
+  // Background video: skipped for data-saver and reduced-motion users; the purple background or hero.jpg shows instead
+  (function () {
+    var v = document.getElementById("heroVideo");
+    var saveData = navigator.connection && navigator.connection.saveData;
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (saveData || reduce) { v.remove(); return; }
+    v.addEventListener("error", function () { v.remove(); }, true);
+    var src = document.createElement("source");
+    src.src = "hero.mp4";
+    src.type = "video/mp4";
+    src.addEventListener("error", function () { v.remove(); });
+    v.appendChild(src);
+    v.load();
+    var p = v.play();
+    if (p && p.catch) p.catch(function () {});
+  })();
+</script>
+</body>
+</html>
