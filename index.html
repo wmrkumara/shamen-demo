@@ -113,7 +113,7 @@
   }
 
   /* Hero with optional background video */
-  .hero { position: relative; overflow: hidden; background: var(--plum); color: var(--pearl); padding: 64px 0 56px; }
+  .hero { position: relative; overflow: hidden; background: var(--plum) url("hero.jpg") 72% 25% / cover no-repeat; color: var(--pearl); padding: 64px 0 56px; }
   .hero video {
     position: absolute; inset: 0; width: 100%; height: 100%;
     object-fit: cover; z-index: 0;
@@ -164,11 +164,8 @@
   .bridal { background: var(--plum); color: var(--pearl); }
   .bridal .lead { color: var(--lilac); }
   .bridal-grid { display: grid; gap: 30px; }
-  .bridal-photo {
-    aspect-ratio: 4 / 5; border-radius: 4px;
-    background: linear-gradient(160deg, #5B2A55, var(--mauve));
-    display: flex; align-items: flex-end; padding: 14px; font-size: 13px; color: var(--lilac);
-  }
+  .bridal-photo { margin: 0; }
+  .bridal-photo img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; border-radius: 4px; }
   .bridal ul { list-style: none; margin: 0 0 32px; padding: 0; }
   .bridal li { padding: 14px 0; border-bottom: 1px solid rgba(231, 221, 236, 0.25); font-size: 18px; }
 
@@ -223,19 +220,14 @@
     background: linear-gradient(160deg, var(--lilac), #CDB8D6);
     display: flex; align-items: center; justify-content: center;
     font-family: var(--display); font-size: 34px; color: var(--plum); margin-bottom: 12px;
+    max-width: 160px;
   }
   .member strong { display: block; font-weight: 500; }
   .member span { font-size: 15px; color: #6A5870; }
 
   /* Gallery */
   .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .ph {
-    aspect-ratio: 4 / 5; border-radius: 4px;
-    background: linear-gradient(160deg, var(--lilac), #CDB8D6);
-    display: flex; align-items: flex-end; padding: 12px;
-    font-size: 13px; color: var(--plum);
-  }
-  .ph:nth-child(3n+2) { background: linear-gradient(160deg, #D9C6DF, var(--mauve)); color: var(--white); }
+  .gallery img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%; border-radius: 4px; background: var(--lilac); }
 
   /* Reviews and jobs */
   .reviews { background: var(--lilac); }
@@ -355,7 +347,7 @@
 
   <section class="block bridal" id="bridal">
     <div class="wrap bridal-grid">
-      <div class="bridal-photo">Bridal photo</div>
+      <figure class="bridal-photo"><img src="bridal.jpg" alt="Bride in a white saree with a white bouquet, styled at Shamen Hair &amp; Beyond" width="900" height="1200" loading="lazy"></figure>
       <div>
         <h2 data-i18n="bridal_h">Bridal at Shamen</h2>
         <p class="lead" data-i18n="bridal_p">Hair, makeup and dressing for your wedding day, prepared in our private bridal dressing room.</p>
@@ -440,10 +432,14 @@
   <section class="block services" id="gallery">
     <div class="wrap">
       <h2 data-i18n="gallery_h">Our work</h2>
-      <p class="lead" data-i18n="gallery_p">Before-and-after photos from our stylists.</p>
+      <p class="lead" data-i18n="gallery_p">Bridal looks, hair styling and makeup by our team.</p>
       <div class="gallery">
-        <div class="ph">Photo 1</div><div class="ph">Photo 2</div><div class="ph">Photo 3</div>
-        <div class="ph">Photo 4</div><div class="ph">Photo 5</div><div class="ph">Photo 6</div>
+        <img src="g1.jpg" alt="Traditional bride with gold jewellery and headpiece" width="700" height="1052" loading="lazy">
+        <img src="g2.jpg" alt="Bridal eye makeup being applied" width="700" height="933" loading="lazy">
+        <img src="g3.jpg" alt="Rose-style bridal bun" width="700" height="933" loading="lazy">
+        <img src="g4.jpg" alt="Bride in a red saree with red flowers in her hair" width="700" height="1050" loading="lazy">
+        <img src="g5.jpg" alt="Makeup artist finishing a bridal look" width="700" height="933" loading="lazy">
+        <img src="g6.jpg" alt="Elegant styled bun at the salon" width="700" height="933" loading="lazy">
       </div>
     </div>
   </section>
@@ -536,7 +532,7 @@
       c_hair: "Hair", c_facial: "Facial & skin", c_wax: "Waxing", c_pedicure: "Pedicure",
       ask: "Ask on WhatsApp",
       team_h: "Meet our team", team_p: "Team photos and names coming soon.",
-      gallery_h: "Our work", gallery_p: "Before-and-after photos from our stylists.",
+      gallery_h: "Our work", gallery_p: "Bridal looks, hair styling and makeup by our team.",
       reviews_h: "What clients say", reviews_p: "Google reviews from our clients will appear here.",
       review_btn: "Read our reviews on Google",
       visit_h: "Visit us", l_address: "Address", l_hours: "Opening hours", hours_tbc: "To be confirmed",
@@ -578,7 +574,7 @@
       c_hair: "හිසකෙස්", c_facial: "Facial සහ සම", c_wax: "Waxing", c_pedicure: "Pedicure",
       ask: "WhatsApp හරහා විමසන්න",
       team_h: "අපේ කණ්ඩායම", team_p: "කණ්ඩායමේ ඡායාරූප සහ නම් ඉක්මනින්.",
-      gallery_h: "අපගේ නිර්මාණ", gallery_p: "අපගේ stylists ලාගේ before/after ඡායාරූප.",
+      gallery_h: "අපගේ නිර්මාණ", gallery_p: "අපගේ කණ්ඩායම කළ bridal, hair styling සහ makeup.",
       reviews_h: "පාරිභෝගික අදහස්", reviews_p: "අපගේ පාරිභෝගිකයන්ගේ Google reviews මෙහි පෙන්වනු ඇත.",
       review_btn: "Google reviews බලන්න",
       visit_h: "අප වෙත පැමිණෙන්න", l_address: "ලිපිනය", l_hours: "විවෘත වේලාවන්", hours_tbc: "ඉක්මනින් දැනුම් දෙනු ලැබේ",
@@ -620,7 +616,7 @@
       c_hair: "கூந்தல்", c_facial: "ஃபேஷியல் & சருமம்", c_wax: "வாக்சிங்", c_pedicure: "பெடிக்யூர்",
       ask: "WhatsApp இல் கேளுங்கள்",
       team_h: "எங்கள் குழுவை சந்தியுங்கள்", team_p: "குழு புகைப்படங்களும் பெயர்களும் விரைவில்.",
-      gallery_h: "எங்கள் வேலைகள்", gallery_p: "எங்கள் ஸ்டைலிஸ்ட்களின் முன்-பின் புகைப்படங்கள்.",
+      gallery_h: "எங்கள் வேலைகள்", gallery_p: "எங்கள் குழுவின் மணமகள், கூந்தல் அலங்காரம் மற்றும் மேக்கப் வேலைகள்.",
       reviews_h: "வாடிக்கையாளர் கருத்துகள்", reviews_p: "எங்கள் வாடிக்கையாளர்களின் Google மதிப்புரைகள் இங்கே தோன்றும்.",
       review_btn: "Google மதிப்புரைகளைப் பாருங்கள்",
       visit_h: "எங்களை சந்திக்க", l_address: "முகவரி", l_hours: "திறக்கும் நேரம்", hours_tbc: "விரைவில் அறிவிக்கப்படும்",
